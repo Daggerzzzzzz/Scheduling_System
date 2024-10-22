@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/style.css">
-    <title>Class Schedule</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Schedule</title>
 </head>
 <body>
     <div class="container">
-        <h1>Class Schedule</h1>
+        <h1>Grade 5 Class Schedule</h1>
         <div id="schedule"></div>
     </div>
     <script>
@@ -22,10 +22,10 @@
                     scheduleDiv.appendChild(sectionHeader);
                     const table = document.createElement('table');
                     const headerRow = table.insertRow();
-                    headerRow.innerHTML = `<th>Time Start</th><th>Time End</th><th>Minutes</th><th>Subjects</th><th>Teacher</th>`;
+                    headerRow.innerHTML = `<th>Time Start</th><th>Time End</th><th>Minutes</th><th>Subjects</th>`;
                     section.schedule.forEach(entry => {
                         const row = table.insertRow();
-                        row.innerHTML = `<td>${entry.time_start}</td><td>${entry.time_end}</td><td>${entry.minutes}</td><td>${entry.subject}</td><td>${entry.teacher}</td>`;
+                        row.innerHTML = `<td>${entry.time_start}</td><td>${entry.time_end}</td><td>${entry.minutes}</td><td>${entry.subject}</td>`;
                     });
                     scheduleDiv.appendChild(table);
                 });

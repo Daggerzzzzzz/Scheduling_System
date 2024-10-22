@@ -5,6 +5,7 @@ body {
     padding: 20px;
 }
 .container {
+    text-align: center;
     max-width: 800px;
     margin: auto;
     background: white;
@@ -25,7 +26,7 @@ table, th, td {
 }
 th, td {
     padding: 8px;
-    text-align: left;
+    text-align: center;
 }
 th {
     background-color: #4CAF50;
